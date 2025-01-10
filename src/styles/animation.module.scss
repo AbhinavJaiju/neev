@@ -1,0 +1,147 @@
+.appContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+  }
+  
+  .element {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .head {
+    left:200px;
+    animation: headMove 3s ease-in-out forwards;
+    transform: scaleX(-1);
+    width: 200px;
+  }
+  
+  .ai {
+    left: 35%;
+    // transform: translateX(-50%);
+    animation: aiMove 1s ease-in-out forwards;
+    width: 200px;
+  }
+  
+  .headVisible {
+    opacity: 1;
+  }
+  
+  .aiVisible {
+    opacity: 1;
+  }
+  .report {
+    left: 60%; 
+    transform: translateX(-50%);
+    animation: generateReport 4s linear infinite;
+  }
+  
+  .reportImage {
+    width: 400px; 
+    height: auto; 
+    background: #ffffff;
+    border-radius: 8px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes generateReport {
+    0% {
+      transform: translateX(-50%) scale(0.8);
+      opacity: 0;
+    }
+    20% {
+      transform: translateX(0%) scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(20%) scale(1);
+      opacity: 1;
+    }
+    90% {
+      transform: translateX(20%) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(20%) scale(0.8);
+      opacity: 0;
+    }
+  }
+ 
+  
+  @keyframes headTalk {
+    0%, 100% {
+      transform: translateY(0) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-5px) rotateY(180deg);
+    }
+  }
+  
+ 
+  
+  @keyframes headMove {
+    from {
+      transform: translateX(-100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .lottieAi{
+    height: 200px;
+    width: 200px;
+  }
+  .headAi{
+    width: 200px;
+    height: 200px; 
+  }
+  @media (max-width:768px) {
+    .reportImage {
+      width: 200px; 
+      height: auto; 
+      background: #ffffff;
+      border-radius: 8px;
+      //  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    }
+    .lottieAi{
+      height: 100px;
+      width: 100px;
+    }
+    .aiVisible {
+      opacity: 1;
+      width: 90px;
+    }
+    .head {
+      left:20px;
+      animation: headMove 3s ease-in-out forwards;
+      transform: scaleX(-1);
+      width: 100px;
+    }
+    .headAi{
+      width: 100px;
+      height: 100px; 
+    }
+    .ai {
+      left: 30%;
+      // transform: translateX(-50%);
+      animation: aiMove 1s ease-in-out forwards;
+    }
+    .appContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      overflow: hidden;
+    }
+  }
+  
+  
+  

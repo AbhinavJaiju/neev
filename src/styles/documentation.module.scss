@@ -1,0 +1,145 @@
+.documentationMainContainer {
+  padding-top: 20px;
+
+  @media (min-width: 640px) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .documentationSecondContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .documentationText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @media (min-width: 640px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .heading {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      text-align: center;
+      font-weight: 500;
+      color: rgb(31, 41, 55);
+
+      @media (min-width: 640px) {
+        font-size: 2.25rem;
+        margin-bottom: 1.25rem;
+        text-align: left;
+      }
+
+      @media (min-width: 768px) {
+        white-space: nowrap;
+        text-align: left;
+      }
+    }
+
+    .colorHeading {
+      text-align: left;
+      display: inline-block;
+      color: #607aff;
+      -webkit-background-clip: text;
+      background-clip: text;
+      width: fit-content;
+    }
+
+    .secondaryText {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #6b7280;
+      font-family: "DM Sans", sans-serif;
+      text-align: center;
+
+      @media (min-width: 640px) {
+        font-size: 1.125rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .documentationImage {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: -1.25rem;
+
+    @media (min-width: 640px) {
+      width: 600px;
+    }
+  }
+  @media (max-width:768px) {
+    .documentationImage {
+      width: 75vw;
+    }  
+    .images{
+      width: 38px;
+    }
+  }
+
+  .image2 {
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: 640px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.extraBold {
+  font-weight: 600;
+}
+.images{
+  width: 58px;
+}
+.listDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 1rem;
+  max-width: 540px;
+  margin-bottom: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  align-items: center;
+
+  @media (min-width: 640px) {
+    font-size: 1.125rem;
+  }
+}
+.documentationThirdContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
