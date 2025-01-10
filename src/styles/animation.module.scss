@@ -22,7 +22,7 @@
   }
   
   .ai {
-    left: 35%;
+    left: 40%;
     // transform: translateX(-50%);
     animation: aiMove 1s ease-in-out forwards;
     width: 200px;
@@ -51,23 +51,22 @@
   
   @keyframes generateReport {
     0% {
-      transform: translateX(-50%) scale(0.8);
-      opacity: 0;
+      transform: translateX(-50%) scale(0.1);
     }
     20% {
-      transform: translateX(0%) scale(1);
+      transform: translateX(0%) scale(0.8); 
       opacity: 1;
     }
     70% {
-      transform: translateX(20%) scale(1);
+      transform: translateX(20%) scale(1); 
       opacity: 1;
     }
-    90% {
-      transform: translateX(20%) scale(1);
-      opacity: 0;
+    85% {
+      transform: translateX(50vw) scale(1); 
+      opacity: 1;
     }
     100% {
-      transform: translateX(20%) scale(0.8);
+      transform: translateX(200vw) scale(1.2);
       opacity: 0;
     }
   }
