@@ -108,6 +108,11 @@
       //  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     }
+    .report {
+      left: 50%; 
+      transform: translateX(-50%);
+      animation: generateReport 4s linear infinite;
+    }
     .lottieAi{
       height: 100px;
       width: 100px;
@@ -137,7 +142,7 @@
       justify-content: space-between;
       position: relative;
       width: 100%;
-      height: 50vh;
+      height: 40vh;
       overflow: hidden;
     }
   }
